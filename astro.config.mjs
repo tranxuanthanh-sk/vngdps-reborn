@@ -9,7 +9,7 @@ import solidJs from '@astrojs/solid-js'
 export default defineConfig({
   integrations: [tailwind(), solidJs()],
   i18n: {
-    defaultLocale: "en",
-    locales: ["en", "vi"]
-  }
+    defaultLocale: 'en',
+    locales: ['en', 'vi'],
+  },
 })

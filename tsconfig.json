@@ -8,7 +8,7 @@
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
       "@assets/*": ["src/assets/*"],
-      "@types/*": ["@types/*.d.ts"],
+      "@i18n/*": ["src/i18n/*"],
     }
   }
 }

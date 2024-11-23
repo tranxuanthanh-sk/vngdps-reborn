@@ -1,8 +1,8 @@
 ---
 import Navbar from '@components/Navbar/Navbar.astro'
-import type { MetadataProps } from '@types/shared'
+import type { MetadataProps } from '../../@types/shared'
 
-const { langCode, title, desc }: MetadataProps = Astro.props
+const { langCode, title, desc } = Astro.props as MetadataProps
 ---
 
 <!doctype html>
@@ -13,7 +13,7 @@ const { langCode, title, desc }: MetadataProps = Astro.props
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="color-scheme" content="dark light">
+    <meta name="color-scheme" content="dark light" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

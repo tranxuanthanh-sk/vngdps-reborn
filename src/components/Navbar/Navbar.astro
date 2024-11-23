@@ -1,21 +1,26 @@
 ---
-import { Image } from 'astro:assets';
+import { Image } from 'astro:assets'
 import GDPS_Icon from '@assets/gdps_icon.png'
-import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils'
 
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <nav class="top-0 w-full bg-transparent">
   <div class="grid grid-cols-2">
     <div>
       <a href="/" class="inline-block">
-        <Image class="pointer-events-none rounded-2xl" src={GDPS_Icon} alt="VNGDPS's logo" loading="eager" width=55 height=55 />
+        <Image
+          class="pointer-events-none rounded-2xl"
+          src={GDPS_Icon}
+          alt="VNGDPS's logo"
+          loading="eager"
+          width="55"
+          height="55"
+        />
       </a>
     </div>
-    <div>
-
-    </div>
+    <div></div>
   </div>
 </nav>

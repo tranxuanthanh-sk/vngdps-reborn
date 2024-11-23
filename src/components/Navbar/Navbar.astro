@@ -1,10 +1,12 @@
 ---
 import { Image } from 'astro:assets'
 import GDPS_Icon from '@assets/gdps_icon.png'
-import { getLangFromUrl, useTranslations } from '../../i18n/utils'
+// import { getLangFromUrl, useTranslations } from '@i18n/utils'
+import ButtonAlternative from '@components/ui/ButtonAlternative.astro'
+import MenuIcon from "@icons/MenuIcon.astro"
 
-const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
+// const lang = getLangFromUrl(Astro.url)
+// const t = useTranslations(lang)
 ---
 
 <nav class="top-0 w-full bg-transparent">
@@ -21,6 +23,8 @@ const t = useTranslations(lang)
         />
       </a>
     </div>
-    <div></div>
+    <ButtonAlternative btnAlternativeClass="w-fit h-fit">
+      <MenuIcon />
+    </ButtonAlternative>
   </div>
 </nav>

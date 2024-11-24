@@ -6,6 +6,7 @@
 - [SolidJS](https://www.solidjs.com/) (**?** - Will be used?)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [Preline](https://preline.co/)
 
 ## Commands
 

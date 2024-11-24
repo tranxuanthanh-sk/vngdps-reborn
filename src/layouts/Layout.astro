@@ -1,6 +1,6 @@
 ---
 import Navbar from '@components/Navbar/Navbar.astro'
-import type { MetadataProps } from '../../@types/shared'
+import type { MetadataProps } from '../../@types'
 
 const { langCode, title, desc } = Astro.props as MetadataProps
 ---
@@ -27,3 +27,5 @@ const { langCode, title, desc } = Astro.props as MetadataProps
     <slot />
   </body>
 </html>
+
+<script>import "preline/dist/preline.js";</script>

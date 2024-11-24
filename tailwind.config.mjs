@@ -7,5 +7,5 @@ export default {
       bevnpro: ['Be Vietnam Pro', 'sans-serif'],
     },
   },
-  plugins: [require('flowbite/plugin')],
+  plugins: [require('preline/plugin')],
 }

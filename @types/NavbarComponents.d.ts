@@ -1,3 +1,0 @@
-interface NavbarPropsType {
-  // pass
-}

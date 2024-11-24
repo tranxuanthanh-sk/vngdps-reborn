@@ -1,11 +1,11 @@
 # VNGDPS Reborn Website Source code
 
 ## Everything you need to build this project
+
 - [Astro](https://astro.build/)
 - [SolidJS](https://www.solidjs.com/) (**?** - Will be used?)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Flowbite](https://flowbite.com/)
 
 ## Commands
 

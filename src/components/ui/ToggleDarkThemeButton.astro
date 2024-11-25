@@ -1,0 +1,23 @@
+---
+import DarkModeIcon from '@components/icons/DarkModeIcon.astro'
+import LightModeIcon from '@components/icons/LightModeIcon.astro'
+---
+
+<button
+  type="button"
+  class="hs-dark-mode block rounded-full font-medium text-gray-800 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none hs-dark-mode-active:hidden dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+  data-hs-theme-click-value="dark"
+>
+  <span class="group inline-flex size-9 shrink-0 items-center justify-center">
+    <DarkModeIcon />
+  </span>
+</button>
+<button
+  type="button"
+  class="hs-dark-mode hidden rounded-full font-medium text-gray-800 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none hs-dark-mode-active:block dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+  data-hs-theme-click-value="light"
+>
+  <span class="group inline-flex size-9 shrink-0 items-center justify-center">
+    <LightModeIcon />
+  </span>
+</button>

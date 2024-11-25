@@ -1,5 +1,5 @@
 ---
-import Navbar from '@components/Navbar/Navbar.astro'
+import Navbar from '@components/Navbar/Navbar.tsx'
 import type { MetadataProps } from '../../@types'
 
 const { langCode, title, desc } = Astro.props as MetadataProps
@@ -23,11 +23,32 @@ const { langCode, title, desc } = Astro.props as MetadataProps
     <title>{title}</title>
   </head>
   <body>
-    <Navbar />
+    <Navbar client:only="react" />
     <slot />
   </body>
 </html>
 
 <script>
   import 'preline/dist/preline.js'
+</script>
+
+<script is:inline>
+  const html = document.querySelector('html')
+  const isLightOrAuto =
+    localStorage.getItem('hs_theme') === 'light' ||
+    (localStorage.getItem('hs_theme') === 'auto' &&
+      !window.matchMedia('(prefers-color-scheme: dark)').matches)
+  const isDarkOrAuto =
+    localStorage.getItem('hs_theme') === 'dark' ||
+    (localStorage.getItem('hs_theme') === 'auto' &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches)
+
+  if (isLightOrAuto && html.classList.contains('dark'))
+    html.classList.remove('dark')
+  else if (isDarkOrAuto && html.classList.contains('light'))
+    html.classList.remove('light')
+  else if (isDarkOrAuto && !html.classList.contains('dark'))
+    html.classList.add('dark')
+  else if (isLightOrAuto && !html.classList.contains('light'))
+    html.classList.add('light')
 </script>

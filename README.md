@@ -3,7 +3,7 @@
 ## Everything you need to build this project
 
 - [Astro](https://astro.build/)
-- [SolidJS](https://www.solidjs.com/) (**?** - Will be used?)
+- [React](https://www.react.dev)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Preline](https://preline.co/)
